@@ -1,7 +1,7 @@
 # 🔹 100 Days of Learning React Until I Master It
 
 | Day      | Topic                        | Goal                                                                 | Status  |
-|----------|------------------------------|----------------------------------------------------------------------|-----------|
+|-------------|------------------------------|----------------------------------------------------------------------|-----------|
 | Day 1    | Set up React using Vite       | Project is running locally and on Git.                              |   ✅    | 
 | Day 2    | Understand JSX                | Explore how JSX compiles to JS + build a simple JSX-based greeting app. |
 | Day 3    | Create your first component   | Move logic into a reusable `<Greeting />` component.                 |
