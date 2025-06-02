@@ -1,6 +1,6 @@
-100 days of learning React until i master it.
+#100 days of learning React until i master it.
 
-List of task to do to learn React:
+###List of task to do to learn React:
 1. Set up React using Vite or Create React App
 2. Understand JSX & how it compiles to JS
 3. Create your first component
