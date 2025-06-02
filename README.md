@@ -1,8 +1,8 @@
-## 🔹 Days 1–10: React Fundamentals + JSX
+## 🔹100 days of learning React until i master it. 
 
 | Day      | Topic                        | Goal                                                                 |
 |----------|------------------------------|----------------------------------------------------------------------|
-| ✅ Day 1 | Set up React using Vite       | Project is running locally and on Git.                              |
+|   ✅ Day 1   | Set up React using Vite       | Project is running locally and on Git.                              |
 | Day 2    | Understand JSX                | Explore how JSX compiles to JS + build a simple JSX-based greeting app. |
 | Day 3    | Create your first component   | Move logic into a reusable `<Greeting />` component.                 |
 | Day 4    | Nest & reuse components       | Build `<Header />`, `<Footer />`, reuse in `App.jsx`.               |
