@@ -4,7 +4,7 @@
 |-------------|------------------------------|----------------------------------------------------------------------|-----------|
 | Day 1    | Set up React using Vite       | Project is running locally and on Git.                              |   <div align="center">✅</div>    | 
 | Day 2    | Understand JSX                | Explore how JSX compiles to JS + build a simple JSX-based greeting app. |   <div align="center">✅</div>    |
-| Day 3    | Create your first component   | Move logic into a reusable `<Greeting />` component.                 |
+| Day 3    | Create your first component   | Move logic into a reusable `<Greeting />` component.                 | <div align="center">✅</div>    |
 | Day 4    | Nest & reuse components       | Build `<Header />`, `<Footer />`, reuse in `App.jsx`.               |
 | Day 5    | Props (intro)                | Pass data like name and age into a Profile component.               |
 | Day 6    | Destructure props            | Clean your code using ES6 destructuring inside the component.       |
