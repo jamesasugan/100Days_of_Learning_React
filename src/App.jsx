@@ -1,4 +1,6 @@
 import './App.css'
+import Footer from './components/Footer.jsx';
+import Header from './components/Header.jsx';
 import Profile from './components/Profile.jsx';
 
 function App() {
@@ -7,8 +9,13 @@ function App() {
   return (
     
     <>
-      <div>
-        <Profile />
+      <div className='min-h-screen flex flex-col bg-gray-100 text-gray-800'>
+        <Header />
+        <main className='flex-grow flex'>
+          <Profile />
+        </main>
+       
+        <Footer />
       </div>
     </>
   )
