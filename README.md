@@ -6,7 +6,7 @@
 | Day 2    | Understand JSX                | Explore how JSX compiles to JS + build a simple JSX-based greeting app. |   <div align="center">✅</div>    |
 | Day 3    | Create your first component   | Move logic into a reusable `<Greeting />` component.                 | <div align="center">✅</div>    |
 | Day 4    | Nest & reuse components       | Build `<Header />`, `<Footer />`, reuse in `App.jsx`.               | <div align="center">✅</div>    |
-| Day 5    | Props (intro)                | Pass data like name and age into a Profile component.               |
+| Day 5    | Props (intro)                | Pass data like name and age into a Profile component.               | <div align="center">✅</div>    |
 | Day 6    | Destructure props            | Clean your code using ES6 destructuring inside the component.       |
 | Day 7    | Conditional rendering        | Use `if` / ternary to show different greetings or messages.         |
 | Day 8    | Render lists with `.map()`    | Render a list of items (like hobbies, tasks, etc.).                 |
