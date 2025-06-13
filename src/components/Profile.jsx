@@ -4,7 +4,8 @@ const Profile = ({name, age, hobby}) => {
         <div className='bg-blue-500 text-white p-6 rounded-lg shadow-lg text-lg'>
             <h2>Hi, my name is {name}</h2>
             <p>I am {age} years old.</p>
-            <p>My hobby is {hobby}</p>
+            <p>{age >= 18 ? 'You are an Adult' : 'You are still a minor.'}</p>
+            {hobby&& <p>My hobby is {hobby}.</p>}
         </div>
     </div>
   )
