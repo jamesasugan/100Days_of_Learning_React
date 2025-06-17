@@ -7,8 +7,8 @@ const Profile = ({name, age, hobby}) => {
             <p>{age >= 18 ? 'You are an Adult' : 'You are still a minor.'}</p>
             <p>My Hobbies:</p>
             <ul className="list-disc list-inside mt-2">
-              {hobby.map((hobby, index) => (
-                <li key={index}>{hobby}</li>
+              {hobby.map((item) => (
+                <li key={item}>{item}</li>
               ))}
             </ul>
         </div>
