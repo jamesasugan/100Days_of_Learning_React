@@ -11,7 +11,7 @@
 | Day 7    | Conditional rendering        | Use `if` / ternary to show different greetings or messages.         | <div align="center">✅</div>    |
 | Day 8    | Render lists with `.map()`    | Render a list of items (like hobbies, tasks, etc.).                 | <div align="center">✅</div>    |
 | Day 9    | Add unique keys              | Apply the `key` prop correctly while mapping lists.                 | <div align="center">✅</div>    |
-| Day 10   | Review + Git commit + Cleanup | Push to GitHub, organize folders, refactor code, take notes.        |
+| Day 10   | Review + Git commit + Cleanup | Push to GitHub, organize folders, refactor code, take notes.        | <div align="center">✅</div>    |
 | Day 11 | Intro to `useState()`       | Add a simple counter.                              |
 | Day 12 | Update state on click       | Add and subtract from counter using buttons.       |
 | Day 13 | Track form input with state | Build a controlled input field.                    |
