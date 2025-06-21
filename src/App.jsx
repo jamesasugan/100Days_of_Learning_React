@@ -1,4 +1,5 @@
 import './App.css'
+import Counter from './components/Counter.jsx';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header.jsx';
 import Profile from './components/Profile.jsx';
@@ -12,13 +13,14 @@ function App() {
       <div className='min-h-screen flex flex-col bg-gray-100 text-gray-800'>
         <Header />
         <main className='flex-grow flex'>
-          <Profile 
+          {/* <Profile 
           name="James" 
           age={22} 
-          hobby={['Gaming', 'Coding', 'Cycling & Running']} />
+          hobby={['Gaming', 'Coding', 'Cycling & Running']} /> */}
+           <Counter />
         </main>
-       
         <Footer />
+       
       </div>
     </>
   )
