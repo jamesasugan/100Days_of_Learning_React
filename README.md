@@ -13,7 +13,7 @@
 | Day 9    | Add unique keys              | Apply the `key` prop correctly while mapping lists.                 | <div align="center">✅</div>    |
 | Day 10   | Review + Git commit + Cleanup | Push to GitHub, organize folders, refactor code, take notes.        | <div align="center">✅</div>    |
 | Day 11 | Intro to `useState()`       | Add a simple counter.                              | <div align="center">✅</div>    |
-| Day 12 | Update state on click       | Add and subtract from counter using buttons.       |
+| Day 12 | Update state on click       | Add and subtract from counter using buttons.       | <div align="center">✅</div>    |
 | Day 13 | Track form input with state | Build a controlled input field.                    |
 | Day 14 | Multiple form fields        | Track name + email and show it on screen.          |
 | Day 15 | Toggle state (show/hide)    | Use state to show or hide elements.                |
