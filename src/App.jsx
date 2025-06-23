@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './components/Counter.jsx';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header.jsx';
+import NameInput from './components/NameInput.jsx';
 import Profile from './components/Profile.jsx';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           name="James" 
           age={22} 
           hobby={['Gaming', 'Coding', 'Cycling & Running']} /> */}
-           <Counter />
+           {/* <Counter /> */}
+           <NameInput />
         </main>
         <Footer />
        
