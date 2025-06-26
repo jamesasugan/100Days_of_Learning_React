@@ -3,6 +3,7 @@ import Counter from './components/Counter.jsx';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header.jsx';
 import NameInput from './components/NameInput.jsx';
+import NewForm from './components/newForm.jsx';
 import Profile from './components/Profile.jsx';
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
           age={22} 
           hobby={['Gaming', 'Coding', 'Cycling & Running']} /> */}
            {/* <Counter /> */}
-           <NameInput />
+           {/* <NameInput /> */}
+           <NewForm />
         </main>
         <Footer />
        
