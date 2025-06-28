@@ -5,6 +5,7 @@ import Header from './components/Header.jsx';
 import NameInput from './components/NameInput.jsx';
 import NewForm from './components/newForm.jsx';
 import Profile from './components/Profile.jsx';
+import ToggleBox from './components/ToggleBox.jsx';
 
 function App() {
   const name = "James Asugan";
@@ -21,7 +22,8 @@ function App() {
           hobby={['Gaming', 'Coding', 'Cycling & Running']} /> */}
            {/* <Counter /> */}
            {/* <NameInput /> */}
-           <NewForm />
+           {/* <NewForm /> */}
+           <ToggleBox />
         </main>
         <Footer />
        
