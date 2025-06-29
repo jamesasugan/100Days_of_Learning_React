@@ -5,6 +5,7 @@ import Header from './components/Header.jsx';
 import NameInput from './components/NameInput.jsx';
 import NewForm from './components/newForm.jsx';
 import Profile from './components/Profile.jsx';
+import ShowMore from './components/ShowMore.jsx';
 import ToggleBox from './components/ToggleBox.jsx';
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
            {/* <Counter /> */}
            {/* <NameInput /> */}
            {/* <NewForm /> */}
-           <ToggleBox />
+           {/* <ToggleBox /> */}
+           <ShowMore />
         </main>
         <Footer />
        
