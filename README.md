@@ -17,7 +17,7 @@
 | Day 13 | Track form input with state | Build a controlled input field.                    | <div align="center">✅</div>    |
 | Day 14 | Multiple form fields        | Track name + email and show it on screen.          | <div align="center">✅</div>    |
 | Day 15 | Toggle state (show/hide)    | Use state to show or hide elements.                | <div align="center">✅</div>    |
-| Day 16 | Render UI based on state    | "Show More / Show Less" example.                   |
+| Day 16 | Render UI based on state    | "Show More / Show Less" example.                   | <div align="center">✅</div>    |
 | Day 17 | Lift state up               | Share data between parent and child components.    |
 | Day 18 | Practice app                | Feedback form or todo list using state and inputs. |
 | Day 19 | Review + cleanup            | Push to GitHub, organize components.               |
