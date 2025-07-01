@@ -2,11 +2,13 @@ import './App.css'
 import Counter from './components/Counter.jsx';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header.jsx';
+import InputName from './components/InputName.jsx';
 import NameInput from './components/NameInput.jsx';
 import NewForm from './components/newForm.jsx';
 import Profile from './components/Profile.jsx';
 import ShowMore from './components/ShowMore.jsx';
 import ToggleBox from './components/ToggleBox.jsx';
+import UserInfo from './components/UserInfo.jsx';
 
 function App() {
   const name = "James Asugan";
@@ -25,7 +27,8 @@ function App() {
            {/* <NameInput /> */}
            {/* <NewForm /> */}
            {/* <ToggleBox /> */}
-           <ShowMore />
+           {/* <ShowMore /> */}
+           <UserInfo />
         </main>
         <Footer />
        
