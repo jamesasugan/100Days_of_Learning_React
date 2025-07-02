@@ -1,6 +1,7 @@
 import './App.css'
 import Counter from './components/Counter.jsx';
 import Footer from './components/Footer.jsx';
+import FormPrac from './components/FormPrac.jsx';
 import Header from './components/Header.jsx';
 import InputName from './components/InputName.jsx';
 import NameInput from './components/NameInput.jsx';
@@ -28,7 +29,8 @@ function App() {
            {/* <NewForm /> */}
            {/* <ToggleBox /> */}
            {/* <ShowMore /> */}
-           <UserInfo />
+           {/* <UserInfo /> */}
+           <FormPrac />
         </main>
         <Footer />
        
