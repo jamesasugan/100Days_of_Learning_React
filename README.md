@@ -19,7 +19,7 @@
 | Day 15 | Toggle state (show/hide)    | Use state to show or hide elements.                | <div align="center">✅</div>    |
 | Day 16 | Render UI based on state    | "Show More / Show Less" example.                   | <div align="center">✅</div>    |
 | Day 17 | Lift state up               | Share data between parent and child components.    | <div align="center">✅</div>    |
-| Day 18 | Practice app                | Feedback form or todo list using state and inputs. |
+| Day 18 | Forms                | Handling Form Submission | <div align="center">✅</div>    |
 | Day 19 | Review + cleanup            | Push to GitHub, organize components.               |
 | Day 20 | Reflection day              | Write what you’ve learned + update README in repo. |
 | Day 21 | Intro to `useEffect()`        | Log something when the component loads.                  |
