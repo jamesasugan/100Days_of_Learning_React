@@ -8,6 +8,7 @@ import NameInput from './components/NameInput.jsx';
 import NewForm from './components/newForm.jsx';
 import Profile from './components/Profile.jsx';
 import ShowMore from './components/ShowMore.jsx';
+import ToDo from './components/ToDo.jsx';
 import ToggleBox from './components/ToggleBox.jsx';
 import UserInfo from './components/UserInfo.jsx';
 
@@ -30,7 +31,8 @@ function App() {
            {/* <ToggleBox /> */}
            {/* <ShowMore /> */}
            {/* <UserInfo /> */}
-           <FormPrac />
+           {/* <FormPrac /> */}
+           <ToDo />
         </main>
         <Footer />
        
