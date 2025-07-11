@@ -20,7 +20,7 @@
 | Day 16 | Render UI based on state    | "Show More / Show Less" example.                   | <div align="center">✅</div>    |
 | Day 17 | Lift state up               | Share data between parent and child components.    | <div align="center">✅</div>    |
 | Day 18 | Forms                | Handling Form Submission | <div align="center">✅</div>    |
-| Day 19 | Review + cleanup            | Push to GitHub, organize components.               |
+| Day 19 | To Do            | To Do list using state and inputs.                | <div align="center">✅</div>    |
 | Day 20 | Reflection day              | Write what you’ve learned + update README in repo. |
 | Day 21 | Intro to `useEffect()`        | Log something when the component loads.                  |
 | Day 22 | Fetch data from an API        | Use `fetch()` inside `useEffect()` and display the data. |
