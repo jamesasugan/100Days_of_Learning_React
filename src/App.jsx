@@ -10,6 +10,7 @@ import Profile from './components/Profile.jsx';
 import ShowMore from './components/ShowMore.jsx';
 import ToDo from './components/ToDo.jsx';
 import ToggleBox from './components/ToggleBox.jsx';
+import UseEffectIntro from './components/UseEffectIntro.jsx';
 import UserInfo from './components/UserInfo.jsx';
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
            {/* <ShowMore /> */}
            {/* <UserInfo /> */}
            {/* <FormPrac /> */}
-           <ToDo />
+           {/* <ToDo /> */}
+           <UseEffectIntro />
         </main>
         <Footer />
        
