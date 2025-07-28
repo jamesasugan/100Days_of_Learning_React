@@ -23,7 +23,7 @@
 | Day 19 | To Do            | To Do list using state and inputs.                | <div align="center">✅</div>    |
 | Day 20 | Reflection day              | Write what you’ve learned + update README in repo. | <div align="center">✅</div>    |
 | Day 21 | Intro to `useEffect()`        | Log something when the component loads.                  | <div align="center">✅</div>    |
-| Day 22 | Fetch data from an API        | Use `fetch()` inside `useEffect()` and display the data. |
+| Day 22 | Fetch data from an API        | Use `fetch()` inside `useEffect()` and display the data. | <div align="center">✅</div>    |
 | Day 23 | Loading & error states        | Show loading spinner or error message.                   |
 | Day 24 | Tailwind CSS setup            | Install Tailwind and apply basic styles.                 |
 | Day 25 | Component Styling (Tailwind)  | Style cards, buttons, and forms.                         |
