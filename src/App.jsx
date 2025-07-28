@@ -1,5 +1,6 @@
 import './App.css'
 import Counter from './components/Counter.jsx';
+import FetchData from './components/FetchData.jsx';
 import Footer from './components/Footer.jsx';
 import FormPrac from './components/FormPrac.jsx';
 import Header from './components/Header.jsx';
@@ -34,7 +35,8 @@ function App() {
            {/* <UserInfo /> */}
            {/* <FormPrac /> */}
            {/* <ToDo /> */}
-           <UseEffectIntro />
+           {/* <UseEffectIntro /> */}
+            <FetchData />
         </main>
         <Footer />
        
