@@ -26,7 +26,7 @@
 | Day 22 | Fetch data from an API        | Use `fetch()` inside `useEffect()` and display the data. | <div align="center">✅</div>    |
 | Day 23 | Loading & error states        | Show loading spinner or error message.                   | <div align="center">✅</div>    |
 | Day 24 | Tailwind CSS setup            | Install Tailwind and apply basic styles.                 | <div align="center">✅</div>    |
-| Day 25 | Component Styling (Tailwind)  | Style cards, buttons, and forms.                         |
+| Day 25 | Component Styling (Tailwind)  | Style cards, buttons, and forms.                         | <div align="center">✅</div>    |
 | Day 26 | Create a reusable button      | Accept props like `label`, `onClick`, `variant`.         |
 | Day 27 | Component composition         | Use `props.children` to build layout wrappers.           |
 | Day 28 | Create your first custom hook | Like `useLocalStorage()` or `useToggle()`.               |
