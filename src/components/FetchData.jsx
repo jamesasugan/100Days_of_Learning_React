@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
+import Spinner from './Spinner';
+import Button from './Button';
 
 const FetchData = () => {
         
-    const Spinner = () => (
-        <div className="w-6 h-6 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-    )
-
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -35,7 +33,7 @@ const FetchData = () => {
                 <h1 className='font-bold text-xl'>Users List:</h1>
             
                 {loading && (
-                    <div className='flex items-center space-x-2'>
+                    <div className='flex flex-col items-center space-x-2'>
                         <Spinner />
                         <span>Loading users...</span>
                     </div>
@@ -48,6 +46,7 @@ const FetchData = () => {
                         {users.map(user => (
                             <li key={user.id}>{user.name}</li>
                         ))}
+                        <Button label="Save" onClick={() => alert('Saved!')} variant="secondary" />
                     </ul>
                 )}
             </div>
