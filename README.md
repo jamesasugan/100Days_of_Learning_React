@@ -28,7 +28,7 @@
 | Day 24 | Tailwind CSS setup            | Install Tailwind and apply basic styles.                 | <div align="center">✅</div>    |
 | Day 25 | Component Styling (Tailwind)  | Style cards, buttons, and forms.                         | <div align="center">✅</div>    |
 | Day 26 | Create a reusable button      | Accept props like `label`, `onClick`, `variant`.         | <div align="center">✅</div>    |
-| Day 27 | Component composition         | Use `props.children` to build layout wrappers.           |
+| Day 27 | Component composition         | Use `props.children` to build layout wrappers.           | <div align="center">✅</div>    |
 | Day 28 | Create your first custom hook | Like `useLocalStorage()` or `useToggle()`.               |
 | Day 29 | Review + component cleanup    | Organize reusable folders/components.                    |
 | Day 30 | Push to GitHub + Reflection   | Finalize and reflect on everything so far.               |
