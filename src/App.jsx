@@ -1,4 +1,5 @@
 import './App.css'
+import Card from './components/Card.jsx';
 import Counter from './components/Counter.jsx';
 import FetchData from './components/FetchData.jsx';
 import Footer from './components/Footer.jsx';
@@ -32,11 +33,12 @@ function App() {
            {/* <NewForm /> */}
            {/* <ToggleBox /> */}
            {/* <ShowMore /> */}
-           {/* <UserInfo /> */}
+           <UserInfo />
            {/* <FormPrac /> */}
            {/* <ToDo /> */}
            {/* <UseEffectIntro /> */}
-            <FetchData />
+           {/* <FetchData /> */}
+           {/* <Card /> */}
         </main>
         <Footer />
        
