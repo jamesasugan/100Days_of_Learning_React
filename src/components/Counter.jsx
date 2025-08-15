@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { useLocalStorage } from './useLocalStorage';
 
 const Counter = () => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useLocalStorage("count", 0);
     const [message, setMessage] = useState('');
     return (
         <div className='w-full h-screen flex justify-center items-center'>

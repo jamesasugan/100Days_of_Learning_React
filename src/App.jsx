@@ -12,6 +12,7 @@ import Profile from './components/Profile.jsx';
 import ShowMore from './components/ShowMore.jsx';
 import ToDo from './components/ToDo.jsx';
 import ToggleBox from './components/ToggleBox.jsx';
+import ToggleButton from './components/ToggleButton.jsx';
 import UseEffectIntro from './components/UseEffectIntro.jsx';
 import UserInfo from './components/UserInfo.jsx';
 
@@ -33,12 +34,13 @@ function App() {
            {/* <NewForm /> */}
            {/* <ToggleBox /> */}
            {/* <ShowMore /> */}
-           <UserInfo />
+           {/* <UserInfo /> */}
            {/* <FormPrac /> */}
            {/* <ToDo /> */}
            {/* <UseEffectIntro /> */}
            {/* <FetchData /> */}
            {/* <Card /> */}
+           <ToggleButton />
         </main>
         <Footer />
        
