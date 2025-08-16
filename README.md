@@ -30,7 +30,7 @@
 | Day 26 | Create a reusable button      | Accept props like `label`, `onClick`, `variant`.         | <div align="center">✅</div>    |
 | Day 27 | Component composition         | Use `props.children` to build layout wrappers.           | <div align="center">✅</div>    |
 | Day 28 | Create your first custom hook | Like `useLocalStorage()` or `useToggle()`.               | <div align="center">✅</div>    |
-| Day 29 | Review + component cleanup    | Organize reusable folders/components.                    |
+| Day 29 | Review + component cleanup    | Organize reusable folders/components.                    | <div align="center">✅</div>    |
 | Day 30 | Push to GitHub + Reflection   | Finalize and reflect on everything so far.               |
 | Day 31 | Intro to `react-router-dom`    | Install + add basic routing setup.                              |
 | Day 32 | Create multiple pages          | Home, About, Contact, and NotFound.                             |
