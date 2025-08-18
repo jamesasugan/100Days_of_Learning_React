@@ -32,7 +32,7 @@
 | Day 28 | Create your first custom hook | Like `useLocalStorage()` or `useToggle()`.               | <div align="center">✅</div>    |
 | Day 29 | Review + component cleanup    | Organize reusable folders/components.                    | <div align="center">✅</div>    |
 | Day 30 | Push to GitHub + Reflection   | Finalize and reflect on everything so far.               | <div align="center">✅</div>    |
-| Day 31 | Intro to `react-router-dom`    | Install + add basic routing setup.                              |
+| Day 31 | Intro to `react-router-dom`    | Install + add basic routing setup.                              | <div align="center">✅</div>    |
 | Day 32 | Create multiple pages          | Home, About, Contact, and NotFound.                             |
 | Day 33 | Navigation with `<Link>`       | Build a working nav bar using routing.                          |
 | Day 34 | Dynamic routes (`useParams`)   | Show details page using dynamic URLs.                           |
