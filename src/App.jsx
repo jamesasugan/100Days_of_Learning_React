@@ -1,4 +1,5 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Card from './components/Card.jsx';
 import Counter from './components/Counter.jsx';
 import FetchData from './components/FetchData.jsx';
@@ -15,6 +16,9 @@ import ToggleBox from './components/ToggleBox.jsx';
 import ToggleButton from './components/ToggleButton.jsx';
 import UseEffectIntro from './components/UseEffectIntro.jsx';
 import UserInfo from './components/UserInfo.jsx';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
 
 function App() {
   const name = "James Asugan";
@@ -23,7 +27,16 @@ function App() {
     
     <>
       <div className='min-h-screen flex flex-col bg-gray-100 text-gray-800'>
-        <Header />
+        <Router>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </Router>
+
+
         <main className='flex-grow flex'>
           {/* <Profile 
           name="James" 
@@ -40,8 +53,9 @@ function App() {
            {/* <UseEffectIntro /> */}
            {/* <FetchData /> */}
            {/* <Card /> */}
-           <ToggleButton />
+           {/* <ToggleButton /> */}
         </main>
+
         <Footer />
        
       </div>
