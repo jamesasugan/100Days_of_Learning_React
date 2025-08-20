@@ -4,7 +4,8 @@ const Header = () => {
   const navItems = [
     {name: "Home", path: "/"},
     {name: "About", path: "/about"},
-    {name: "Contact", path: "/contact"}
+    {name: "Contact", path: "/contact"},
+    {name: "Users", path: "/users"}
   ];
 
   const navLinkClass = ({ isActive}) => isActive ? "bg-green-500 text-white rounded p-1" : "text-blue-500 p-1";
@@ -16,12 +17,14 @@ const Header = () => {
             <div className="flex space-x-4">    
                 <ul className="flex space-x-4">
                   {navItems.map((item) => (
-                    <NavLink
-                      key={item.path}
-                      to={item.path}
-                      className={navLinkClass}>
-                        {item.name}
-                    </NavLink>
+                    <li key={item.path}>
+                      <NavLink
+                        key={item.path}
+                        to={item.path}
+                        className={navLinkClass}>
+                          {item.name}
+                      </NavLink>
+                    </li>
                   ))}
                 </ul>
             </div>
