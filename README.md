@@ -34,7 +34,7 @@
 | Day 30 | Push to GitHub + Reflection   | Finalize and reflect on everything so far.               | <div align="center">✅</div>    |
 | Day 31 | Intro to `react-router-dom`    | Install + add basic routing setup.                              | <div align="center">✅</div>    |
 | Day 32 | Create multiple pages          | Home, About, Contact, and NotFound.                             | <div align="center">✅</div>    |
-| Day 33 | Navigation with `<Link>`       | Build a working nav bar using routing.                          |
+| Day 33 | Navigation with `<Link>`       | Build a working nav bar using routing.                          | <div align="center">✅</div>    |
 | Day 34 | Dynamic routes (`useParams`)   | Show details page using dynamic URLs.                           |
 | Day 35 | Redirects + 404 page           | Add a fallback route with `*`.                                  |
 | Day 36 | Contact form (controlled)      | Build and manage form input state.                              |
