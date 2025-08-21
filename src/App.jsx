@@ -19,6 +19,9 @@ import UserInfo from './components/UserInfo.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
+import NotFound from './pages/NotFound.jsx';
+import Users from './pages/Users.jsx';
+import UserDetail from './pages/UserDetail.jsx';
 
 function App() {
   const name = "James Asugan";
@@ -33,6 +36,9 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/users' element={<Users />} />
+            <Route path='/users/:id' element={<UserDetail />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </Router>
 
