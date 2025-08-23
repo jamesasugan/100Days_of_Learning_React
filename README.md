@@ -37,7 +37,7 @@
 | Day 33 | Navigation with `<Link>`       | Build a working nav bar using routing.                          | <div align="center">✅</div>    |
 | Day 34 | Dynamic routes (`useParams`)   | Show details page using dynamic URLs.                           | <div align="center">✅</div>    |
 | Day 35 | Redirects + 404 page           | Add a fallback route with `*`.                                  | <div align="center">✅</div>    |
-| Day 36 | Contact form (controlled)      | Build and manage form input state.                              |
+| Day 36 | Contact form (controlled)      | Build and manage form input state.                              | <div align="center">✅</div>    |
 | Day 37 | Handle form submission         | Show entered form data on submit.                               |
 | Day 38 | Form validation (basic)        | Ensure all required fields are filled before submission.        |
 | Day 39 | Textarea + Select (controlled) | Add textarea + dropdown to the form.                            |
