@@ -39,7 +39,7 @@
 | Day 35 | Redirects + 404 page           | Add a fallback route with `*`.                                  | <div align="center">✅</div>    |
 | Day 36 | Contact form (controlled)      | Build and manage form input state.                              | <div align="center">✅</div>    |
 | Day 37 | Handle form submission         | Show entered form data on submit.                               | <div align="center">✅</div>    |
-| Day 38 | Form validation (basic)        | Ensure all required fields are filled before submission.        |
+| Day 38 | Form validation (basic)        | Ensure all required fields are filled before submission.        | <div align="center">✅</div>    |
 | Day 39 | Textarea + Select (controlled) | Add textarea + dropdown to the form.                            |
 | Day 40 | Review: Forms + Routing        | Push code and organize everything related to forms and routing. |
 | Day 41 | Create custom hook (basic)   | E.g., `useInput()` or `useLocalStorage()`                |
