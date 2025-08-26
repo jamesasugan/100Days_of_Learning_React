@@ -3,6 +3,7 @@ import { useState } from "react";
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [submittedData, setSubmittedData] = useState(null);
+  const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     subject: "",
     name: "",
@@ -12,19 +13,45 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({...prev, [name]: value}));
+  const { name, value, type, checked } = e.target;
+  setFormData((prev) => ({
+    ...prev,
+    [name]: type === "checkbox" ? checked : value,
+  }));
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if(!formData.subject.trim()) newErrors.subject = "Subject is required";
+    if(!formData.name.trim()) newErrors.name = "Name is required";
+    if(!formData.email.trim()){
+      newErrors.email = "Email is required";
+    } else if(!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid";
+    }
+    
+    if(!formData.message.trim()) newErrors.message = "Message is required";
+    return newErrors;
   }
   
   const handleSubmit = (e) => {
     e.preventDefault();
+    const validateErrors = validate();
+    if(Object.keys(validateErrors).length > 0) {
+      setErrors(validateErrors);
+      return
+    }
+    setErrors({});
     console.log(formData);
     setSubmittedData(formData);  
     setMessage("Form Submitted!");
-    setTimeout(() => setMessage(""), 3000)
-    setTimeout(() => setSubmittedData(null), 3000)
+    setTimeout(() => {
+      setMessage(""); 
+      setSubmittedData(null);
+      setFormData({subject: "", name: "", email: "", message: "", subscribe: false});
+    }, 3000);
 
-    setFormData({subject: "", name: "", email: "", message: "", subscribe: false});
+    
   }
 
   return (
@@ -34,18 +61,22 @@ const Contact = () => {
         <fieldset className="fieldset">
           <label htmlFor="subject" className="fieldset-legend text-gray-800 text-base">Subject</label>
           <input type="text" id="subject" name="subject" autoComplete="none" value={formData.subject} onChange={handleChange} placeholder="Your message subject" className="input bg-gray-200"/>
+          {errors.subject && <p className="text-red-500 text-sm">{errors.subject}</p>}
         </fieldset>
         <fieldset className="fieldset">
           <label htmlFor="name" className="fieldset-legend text-gray-800 text-base">What is your name?</label>
           <input type="text" id="name" name="name" autoComplete="none" value={formData.name} onChange={handleChange} placeholder="Your name" className="input bg-gray-200"/>
+          {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
         </fieldset>
         <fieldset className="fieldset">
           <label htmlFor="email" className="fieldset-legend text-gray-800 text-base">What is your email?</label>
           <input type="email" id="email" name="email" autoComplete="none" value={formData.email} onChange={handleChange} placeholder="Your email" className="input bg-gray-200"/>
+          {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
         </fieldset>
         <fieldset className="fieldset">
           <label htmlFor="message" className="fieldset-legend text-gray-800 text-base">What is your message?</label>
           <textarea id="message" className="textarea h-24 bg-gray-200" autoComplete="none" value={formData.message} onChange={handleChange} name="message" placeholder="Bio"></textarea>
+          {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
         </fieldset>
         <fieldset className="fieldset">
           <label htmlFor="subscribe" className="fieldset-legend text-gray-800 text-base">Subscribe to newsletter?</label>
@@ -55,6 +86,7 @@ const Contact = () => {
         </fieldset>
         <button type="submit" className="btn btn-success">Submit</button>
       </form>
+      
       {submittedData && (
         <div className="p-2 bg-gray-200 rounded mt-5 text-base space-y-1">
           {message && (
@@ -72,6 +104,7 @@ const Contact = () => {
           <p><strong>Subscribe: </strong>{submittedData.subscribe ? "Yes" : "No"}</p>
         </div>
       )}
+
     </div>
   )
 }
