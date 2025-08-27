@@ -40,7 +40,7 @@
 | Day 36 | Contact form (controlled)      | Build and manage form input state.                              | <div align="center">✅</div>    |
 | Day 37 | Handle form submission         | Show entered form data on submit.                               | <div align="center">✅</div>    |
 | Day 38 | Form validation (basic)        | Ensure all required fields are filled before submission.        | <div align="center">✅</div>    |
-| Day 39 | Textarea + Select (controlled) | Add textarea + dropdown to the form.                            |
+| Day 39 | Textarea + Select (controlled) | Add textarea + dropdown to the form.                            | <div align="center">✅</div>    |
 | Day 40 | Review: Forms + Routing        | Push code and organize everything related to forms and routing. |
 | Day 41 | Create custom hook (basic)   | E.g., `useInput()` or `useLocalStorage()`                |
 | Day 42 | Reuse form logic with hook   | Apply hook to form input fields.                         |
