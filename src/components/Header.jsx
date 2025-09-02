@@ -5,7 +5,8 @@ const Header = () => {
     {name: "Home", path: "/"},
     {name: "About", path: "/about"},
     {name: "Contact", path: "/contact"},
-    {name: "Users", path: "/users"}
+    {name: "Users", path: "/users"},
+    {name: "Login", path: "/login"}
   ];
 
   const navLinkClass = ({ isActive}) => isActive ? "bg-green-500 text-white rounded p-1" : "text-blue-500 p-1";
