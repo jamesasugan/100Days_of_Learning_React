@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { contactSchema } from "../assets/utils/validationSchema";
 import InputField from "../components/forms/InputField";
+import useForm from "../hooks/useForm";
 
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [submittedData, setSubmittedData] = useState(null);
-  const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
   const initialFormState = {
@@ -17,41 +17,25 @@ const Contact = () => {
     comment: "",
     subscribe: false,
   };
-  const [formData, setFormData] = useState(initialFormState);
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value,
-    }));
-
-    if (errors[name]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[name];
-        return newErrors;
-      })
-    }
-  };
+  const { values, errors, setErrors, handleChange, resetForm } = useForm(initialFormState);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      await contactSchema.validate(formData, { abortEarly: false });
+      await contactSchema.validate(values, { abortEarly: false });
       
       setErrors({});
-      setSubmittedData(formData);
-      console.log(formData);
+      setSubmittedData(values);
+      console.log(values);
       setSuccessMessage("Form Submitted!");
 
       setTimeout(() => {
         setSuccessMessage("");
         setSubmittedData(null);
-        setFormData(initialFormState);
+        resetForm();
         setLoading(false);
       }, 3000);
 
@@ -76,7 +60,7 @@ const Contact = () => {
         <InputField 
           label="Subject"
           name="subject"
-          value={formData.subject}
+          value={values.subject}
           onChange={handleChange}
           error={errors.subject}
           placeholder="Your message subject"
@@ -86,7 +70,7 @@ const Contact = () => {
         <InputField 
           label="Name"
           name="name"
-          value={formData.name}
+          value={values.name}
           onChange={handleChange}
           error={errors.name}
           placeholder="What is your name"
@@ -97,7 +81,7 @@ const Contact = () => {
           label="Email"
           type="email"
           name="email"
-          value={formData.email}
+          value={values.email}
           onChange={handleChange}
           error={errors.email}
           placeholder="What is your email"
@@ -108,8 +92,9 @@ const Contact = () => {
           <label htmlFor="message" className="fieldset-legend text-gray-800 text-base">What is your message?</label>
           <textarea
             id="message"
+            autoComplete="none"
             className="textarea h-24 bg-gray-200"
-            value={formData.message}
+            value={values.message}
             onChange={handleChange}
             name="message"
             placeholder="Bio"
@@ -121,7 +106,8 @@ const Contact = () => {
         <fieldset className="fieldset">
           <label htmlFor="country" className="fieldset-legend text-gray-800 text-base">What is your country?</label>
           <select
-            value={formData.country}
+            value={values.country}
+            autoComplete="none"
             name="country"
             id="country"
             onChange={handleChange}
@@ -141,7 +127,7 @@ const Contact = () => {
           <textarea
             id="comment"
             className="textarea h-24 bg-gray-200"
-            value={formData.comment}
+            value={values.comment}
             onChange={handleChange}
             name="comment"
             placeholder="Comment"
@@ -156,7 +142,7 @@ const Contact = () => {
             type="checkbox"
             id="subscribe"
             name="subscribe"
-            checked={formData.subscribe}
+            checked={values.subscribe}
             onChange={handleChange}
             className="checkbox checkbox-info"
           />
