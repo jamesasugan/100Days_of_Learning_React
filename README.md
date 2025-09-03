@@ -43,7 +43,7 @@
 | Day 39 | Textarea + Select (controlled) | Add textarea + dropdown to the form.                            | <div align="center">✅</div>    |
 | Day 40 | Review: Forms + Routing        | Push code and organize everything related to forms and routing. | <div align="center">✅</div>    |
 | Day 41 | Create custom hook (basic)   | E.g., `useInput()` or `useLocalStorage()`                | <div align="center">✅</div>    |
-| Day 42 | Reuse form logic with hook   | Apply hook to form input fields.                         |
+| Day 42 | Reuse form logic with hook   | Apply hook to form input fields.                         | <div align="center">✅</div>    |
 | Day 43 | Split code into components   | Break app into small, reusable components.               |
 | Day 44 | Organize folders + structure | Create `/components`, `/pages`, `/hooks`, etc.           |
 | Day 45 | Prop drilling explained      | Understand the pain of passing data through many levels. |
