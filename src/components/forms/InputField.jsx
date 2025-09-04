@@ -1,8 +1,9 @@
-const InputField = ({ label, type="text", name, value, onChange, error, placeholder }) => {
+const InputField = ({ label, type="text", autoComplete="none", name, value, onChange, error, placeholder }) => {
   return (
     <fieldset className="fieldset">
       <label htmlFor={name} className="fieldset-legend text-gray-800 text-base">{label}</label>
       <input 
+        autoComplete={autoComplete}
         type={type} 
         id={name} 
         name={name} 

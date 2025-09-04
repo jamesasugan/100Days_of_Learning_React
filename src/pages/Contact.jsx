@@ -2,6 +2,9 @@ import { useState } from "react";
 import { contactSchema } from "../assets/utils/validationSchema";
 import InputField from "../components/forms/InputField";
 import useForm from "../hooks/useForm";
+import SelectField from "../components/forms/SelectField";
+import TextAreaField from "../components/forms/TextAreaField";
+import CheckboxField from "../components/forms/CheckboxField";
 
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
@@ -88,77 +91,48 @@ const Contact = () => {
         />
 
         {/* Message */}
-        <fieldset className="fieldset">
-          <label htmlFor="message" className="fieldset-legend text-gray-800 text-base">What is your message?</label>
-          <textarea
-            id="message"
-            autoComplete="none"
-            className="textarea h-24 bg-gray-200"
-            value={values.message}
-            onChange={handleChange}
-            name="message"
-            placeholder="Bio"
-          />
-          {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
-        </fieldset>
+        <TextAreaField
+          label="What is your message?"
+          name="message"
+          value={values.message}
+          onChange={handleChange}
+          placeholder="Write your message here..."
+          error={errors.message}  
+        />
 
         {/* Country */}
-        <fieldset className="fieldset">
-          <label htmlFor="country" className="fieldset-legend text-gray-800 text-base">What is your country?</label>
-          <select
-            value={values.country}
-            autoComplete="none"
-            name="country"
-            id="country"
-            onChange={handleChange}
-            className="select bg-gray-200"
-          >
-            <option value="">Select a country</option>
-            <option value="Philippines">Philippines</option>
-            <option value="USA">USA</option>
-            <option value="Canada">Canada</option>
-          </select>
-          {errors.country && <p className="text-red-500 text-sm">{errors.country}</p>}
-        </fieldset>
+        <SelectField
+          label="What is your country?"
+          name="country"
+          value={values.country}
+          onChange={handleChange}
+          options={["Philippines", "USA", "Canada"]}
+          error={errors.country}
+        />
 
         {/* Comment */}
-        <fieldset className="fieldset">
-          <label htmlFor="comment" className="fieldset-legend text-gray-800 text-base">What is your comment?</label>
-          <textarea
-            id="comment"
-            className="textarea h-24 bg-gray-200"
-            value={values.comment}
-            onChange={handleChange}
-            name="comment"
-            placeholder="Comment"
-          />
-          {errors.comment && <p className="text-red-500 text-sm">{errors.comment}</p>}
-        </fieldset>
+        <TextAreaField
+          label="What is your comment?"
+          name="comment"
+          value={values.comment}
+          onChange={handleChange}
+          placeholder="Write your comment here..."
+          error={errors.comment}  
+        />
 
         {/* Subscribe */}
-        <fieldset className="fieldset">
-          <label htmlFor="subscribe" className="fieldset-legend text-gray-800 text-base">Subscribe to newsletter?</label>
-          <input
-            type="checkbox"
-            id="subscribe"
-            name="subscribe"
-            checked={values.subscribe}
-            onChange={handleChange}
-            className="checkbox checkbox-info"
-          />
-        </fieldset>
+        <CheckboxField 
+          label="Subscribe to newsletter?"
+          name="subscribe"
+          checked={values.subscribe}
+          onChange={handleChange}
+          error={errors.subscribe}
+        />
 
-        <button
-          type="submit"
-          className={`btn btn-success ${loading ? "btn-disabled" : ""}`}
-          disabled={loading}
-        >
-          {loading && <span className="loading loading-spinner mr-2"></span>}
-          {loading ? "Loading..." : "Submit"}
-        </button>
-
-
-
+        {loading ? 
+        <button disabled className="px-4 py-2 bg-green-600 rounded font-medium text-white shadow-md cursor-not-allowed"> <span className="loading loading-spinner"></span> Submitting</button> : 
+        <button className="px-4 py-2 bg-green-500 rounded font-medium text-white shadow-md hover:bg-green-600 duration-150 cursor-pointer transition">Submit</button>
+        }
       </form>
 
       {submittedData && (
