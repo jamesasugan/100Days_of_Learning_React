@@ -45,7 +45,7 @@
 | Day 41 | Create custom hook (basic)   | E.g., `useInput()` or `useLocalStorage()`                | <div align="center">✅</div>    |
 | Day 42 | Reuse form logic with hook   | Apply hook to form input fields.                         | <div align="center">✅</div>    |
 | Day 43 | Split code into components   | Break app into small, reusable components.               | <div align="center">✅</div>    |
-| Day 44 | Organize folders + structure | Create `/components`, `/pages`, `/hooks`, etc.           |
+| Day 44 | Organize folders + structure | Create `/components`, `/pages`, `/hooks`, etc.           | <div align="center">✅</div>    |
 | Day 45 | Prop drilling explained      | Understand the pain of passing data through many levels. |
 | Day 46 | Intro to `useContext()`      | Build a theme or auth context provider.                  |
 | Day 47 | Use context for global state | Share state like dark mode across components.            |
